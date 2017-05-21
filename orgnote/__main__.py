@@ -11,7 +11,7 @@ Write note by Emacs with org-mode, and convert .org file into .html file,
 then use orgnote convert into new html with default theme.
 """
 
-from __future__ import absolute_import
+
 
 def main():
     import orgnote.parser

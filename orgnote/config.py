@@ -10,7 +10,7 @@ Write note by Emacs with org-mode, and convert .org file into .html file,
 then use orgnote convert into new html with default theme.
 """
 
-from __future__ import absolute_import
+
 
 from yaml import load, dump
 import os,os.path
@@ -135,11 +135,11 @@ links:
         """display the _config.yml contents"""
         for key in  sorted(self.cfg):
             if isinstance(self.cfg[key],dict):
-                print key
+                print(key)
                 for key2 in sorted(self.cfg[key]):
-                    print "\t",key2,":",self.cfg[key][key2]
+                    print("\t",key2,":",self.cfg[key][key2])
             else:
-                print key,":",self.cfg[key]
+                print(key,":",self.cfg[key])
 
         
 def main(args=None):
